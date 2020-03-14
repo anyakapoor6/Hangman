@@ -15,7 +15,6 @@
 		1B560D53239B54CC00DB2CF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B560D51239B54CC00DB2CF8 /* LaunchScreen.storyboard */; };
 		1B560D5E239B54CC00DB2CF8 /* RollDiceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B560D5D239B54CC00DB2CF8 /* RollDiceAppTests.swift */; };
 		1B560D69239B54CC00DB2CF8 /* RollDiceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B560D68239B54CC00DB2CF8 /* RollDiceAppUITests.swift */; };
-		1BBEE7D823C97FCE00FB7F62 /* aestheticbackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBEE7D723C97FCE00FB7F62 /* aestheticbackground.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,7 +236,6 @@
 			files = (
 				1B560D53239B54CC00DB2CF8 /* LaunchScreen.storyboard in Resources */,
 				1B560D50239B54CC00DB2CF8 /* Assets.xcassets in Resources */,
-				1BBEE7D823C97FCE00FB7F62 /* aestheticbackground.jpeg in Resources */,
 				1B560D4E239B54CB00DB2CF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

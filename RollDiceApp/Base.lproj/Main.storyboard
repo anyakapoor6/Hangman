@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,9 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aestheticbackground" translatesAutoresizingMaskIntoConstraints="NO" id="Kjm-Kg-cUR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Santa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orb-cG-sNd">
                                 <rect key="frame" x="84" y="194" width="247" height="51.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
@@ -35,23 +32,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Kjm-Kg-cUR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PIC-1g-GX0"/>
-                            <constraint firstItem="Kjm-Kg-cUR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="XGw-QT-hJC"/>
-                            <constraint firstItem="Kjm-Kg-cUR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zxs-jy-F8T"/>
                             <constraint firstItem="Orb-cG-sNd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="84" id="fvN-cb-z9h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Orb-cG-sNd" secondAttribute="trailing" constant="83" id="jaA-4S-L19"/>
-                            <constraint firstAttribute="bottom" secondItem="Kjm-Kg-cUR" secondAttribute="bottom" id="u4N-e5-vPl"/>
                             <constraint firstItem="Orb-cG-sNd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="vl2-7j-YjM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hangmanLabel" destination="Orb-cG-sNd" id="0Je-pN-tmq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="aestheticbackground" width="225" height="225"/>
-    </resources>
 </document>

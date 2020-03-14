@@ -37,21 +37,26 @@ class ViewController: UIViewController {
 
     
     
-    @IBOutlet weak var secretSantaLabel: UILabel!
+    @IBOutlet weak var hangmanLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         chosenWord = words.randomElement()!
         wordOnScreen = String(repeating: "_", count: chosenWord!.count);
-        secretSantaLabel.text = wordOnScreen
+        hangmanLabel.text = wordOnScreen
+        hangmanLabel.attributedText = formatLetterSpacing()
         
-               
+       
     }
     @IBAction func randomizer(_ sender: UIButton) {
-        secretSantaLabel.text = wordOnScreen
+        hangmanLabel.text = wordOnScreen
     }
     
+    func formatLetterSpacing() -> NSAttributedString {
+        NSAttributedString.init(string: hangmanLabel.text!, attributes: [NSAttributedString.Key.kern: 20])
+    }
 }
 
 
